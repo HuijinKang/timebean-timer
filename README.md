@@ -1,4 +1,4 @@
-# timebean timer ⏲️
+# ⏲️ timebean timer
 
 ### 1.  Project 소개
 
