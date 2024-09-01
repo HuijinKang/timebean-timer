@@ -4,13 +4,13 @@ public class Member {
     private long id;
     private String nickname;
     private String timerPassword;
-    private String recordedDate;
+    private String createdDate;
 
-    public Member(long id, String nickname, String timerPassword, String recordedDate) {
+    public Member(long id, String nickname, String timerPassword, String createdDate) {
         this.id = id;
         this.nickname = nickname;
         this.timerPassword = timerPassword;
-        this.recordedDate = recordedDate;
+        this.createdDate = createdDate;
     }
 
     public long getId() {
@@ -37,12 +37,12 @@ public class Member {
         this.timerPassword = timerPassword;
     }
 
-    public String getRecordedDate() {
-        return recordedDate;
+    public String getCreatedDate() {
+        return createdDate;
     }
 
-    public void setRecordedDate(String recordedDate) {
-        this.recordedDate = recordedDate;
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
     }
 
     @Override
@@ -51,7 +51,7 @@ public class Member {
                 "id=" + id +
                 ", name='" + nickname + '\'' +
                 ", password='" + timerPassword + '\'' +
-                ", regDate='" + recordedDate + '\'' +
+                ", createdDate='" + createdDate + '\'' +
                 '}';
     }
 }

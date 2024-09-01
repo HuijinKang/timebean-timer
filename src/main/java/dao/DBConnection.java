@@ -13,8 +13,14 @@ public class DBConnection {
         String password = "2580";
 
         try {
+            // 명시적으로 MySQL JDBC 드라이버 로드
+            Class.forName("com.mysql.cj.jdbc.Driver");
             this.connection = DriverManager.getConnection(url, user, password);
+        } catch (ClassNotFoundException e) {
+            System.out.println("JDBC Driver를 찾을 수 없습니다.");
+            e.printStackTrace();
         } catch (SQLException e) {
+            System.out.println("SQL 연결에 실패했습니다.");
             e.printStackTrace();
         }
     }

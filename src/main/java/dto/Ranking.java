@@ -50,7 +50,7 @@ public class Ranking {
                 "id=" + id +
                 ", memberId=" + memberId +
                 ", time=" + totalTime +
-                ", regDate='" + recordedDate + '\'' +
+                ", recordedDate='" + recordedDate + '\'' +
                 '}';
     }
 }
